@@ -28,6 +28,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['localhost']
 
+CSRF_TRUSTED_ORIGINS = ['https://8000-denisklopot-practiceapp-o95fb2wk7t3.ws-eu77.gitpod.io']
+
 
 # Application definition
 
