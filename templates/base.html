@@ -21,8 +21,8 @@
     {% block extra_css %}
     {% endblock %}
 
-    <!-- JavaScript: Bootstrap Bundle with Popper -->
     {% block corejs %}
+    <script src="https://kit.fontawesome.com/69a1e96fe2.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     {% endblock %}
 
@@ -45,27 +45,46 @@
     {% endblock %}
 
     <footer class="fixed-bottom">
-      <div class="container-fluid d-flex justify-content-evenly bg-success">
-        <div class="row">
+      
+      <div class="container-fluid bg-success">
+        <div class="row d-flex justify-content-evenly">
 
-          <div class="col">
-            About us read all about itsdf sdfsdfsdf sdfsdf sdsaa
+          <div class="col-xs-12 col-md-3" id="about-contact">
+            <ul>
+              <li>About</li>
+              <li>Contact us</li>
+              <li>Privacy policy</li>
+            </ul>
           </div>
 
-
-          <form class="col">
+          <form class="col-xs-12 col-md-6" id="newsletter">
             <div class="row">
               <p>Sign up for our newsletter:</p>
             </div>
             <div class="row">
-              <input type="email" class="col form-control" placeholder="Email address"/>
-              <button type="submit" class="col btn btn-primary">Subscribe</button>
+              <div class="col">
+                <input type="email" class="form-control" placeholder="Email address"/>
+              </div>
+              <div class="col">
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+              </div>
             </div>
           </form>
 
-
-          <div class="col">
-            Payement visa mastercard klarna asdasdf sdfsdf sdsdf
+          <div class="col-xs-12 col-md-3" id="payment-methods">
+            <div class="row">
+              <p>Payment methods</p>
+            </div>
+            <div class="row">
+              <p>
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-brands fa-paypal"></i>
+                <i class="fa-brands fa-cc-apple-pay"></i>
+                <i class="fa-brands fa-google-pay"></i>
+                <i class="fa-brands fa-bitcoin"></i>
+              </p>
+            </div>
           </div>
 
         </div>
